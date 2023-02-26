@@ -94,6 +94,14 @@ select {
     margin-top: 2px;
 }
 
+/*spで正確に表示できるようにz-indexを調整*/
+#right-pm,.right-pm,#left-pm,.left-pm{
+    z-index: 5;
+}
+#right-num,.right-num,#left-num,.left-num{
+    z-index: 4;
+}
+
 /*「例題」と「問題」の微調整*/
 #example,.ploblem_number{
     padding-top: 2px;
@@ -196,7 +204,7 @@ table.ex_table{
 .modalArea {
     display: none;
     position: fixed;
-    z-index: auto;
+    z-index: 10;
     top: 0;
     left: 0;
     width: 100%;
