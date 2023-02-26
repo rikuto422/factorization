@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>因数分解</title>
-  <meta name="description" content="因数分解練習サイトです">
+  <title>因数分解練習サイト</title>
+  <meta name="description" content="因数分解練習サイトです。">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:title" content="">
@@ -43,7 +43,7 @@
       <p id="js-ploblem"></p>
       <table>
         <tr>
-            <th><label>$$ =(x $$</label></th>
+            <th><label>$$ =( \,\, x \, $$</label></th>
             <th>
               <select name="pm" id="left-pm">
                 <option value="-">$$-$$</option>
@@ -64,7 +64,7 @@
                 <option value="9">9</option>
               </select>
             </th>
-            <th><label>$$ )(x $$</label></th>
+            <th><label>$$ )\,( \,\, x \, $$</label></th>
             <th>
               <select name="pm" id="right-pm">
                 <option value="-">$$-$$</option>
@@ -92,10 +92,23 @@
     <div class="button">
       <div class="item"><a href="explain.html" class="btn btn--blue">因数分解の手順</a></div>
       <div class="item"><a href="ploblem.html" class="btn btn--blue">練習問題</a></div>
-      <div class="item"><input type="button" class="btn btn--blue" value="例題の正誤判定" onclick="answer()"></div>
+      <div class="item"><input type="button" class="btn btn--blue" value="正誤判定" id="answer"></div>
     </div>
-
     <br><br>
+
+    <!--modalArea-->
+    <section id="modalArea" class="modalArea">
+      <div id="modalBg" class="modalBg"></div>
+      <div class="modalWrapper">
+        <div class="modalContents">
+          <h5 id="judge"></h5>
+          <p id="advice"></p>
+        </div>
+        <div id="closeModal" class="closeModal">
+          &#10005;
+        </div>
+      </div>
+    </section>
 
     <footer class="footer">
       <ul class="md-flex">
@@ -106,8 +119,10 @@
   </footer>
   </div>
 
-  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src=' https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default' async></script>
+  <script src="index.js"></script>
+
 </body>
 
 </html>

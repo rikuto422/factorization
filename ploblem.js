@@ -102,5 +102,22 @@ function answer(){
         }
         answer_index++;
     }
-    window.alert(ploblem_total + "問中" + correct_counter + "問正解です！");
+    document.getElementById('judge').textContent = `${ploblem_total}問中${correct_counter}問正解`;
+    if(correct_counter == ploblem_total){
+        document.getElementById('advice').textContent = "お疲れ様でした！この調子で頑張りましょう！";
+    }
+    else{
+        document.getElementById('advice').textContent = "お疲れ様でした！次は満点を目指して頑張りましょう！";
+    }
 }
+
+//モーダルの設定
+$(function () {
+    $('#answer').click(function(){
+        answer();
+        $('#modalArea').fadeIn(0);
+    });
+    $('#closeModal , #modalBg').click(function(){
+      $('#modalArea').fadeOut(500);
+    });
+  });

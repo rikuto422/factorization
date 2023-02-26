@@ -19,6 +19,7 @@ let question = "$$x^2" + b + "x" + c + "$$";
 
 document.getElementById('js-ploblem').textContent = question;
 
+//正誤判定
 function answer(){
     let leftAnswer;
     let rightAnswer;
@@ -43,11 +44,24 @@ function answer(){
 
     //解の和と積が一致するかどうかで正誤判定
     if(leftAnswer + rightAnswer == parseInt(b) && leftAnswer * rightAnswer == parseInt(c)){
-        window.alert("正解です！\n今度は「問題スタート」を押して練習問題を解いてみよう！");
+        document.getElementById('judge').textContent = "正解です！";
+        document.getElementById('advice').textContent = "今度は練習問題にチャレンジしてみよう！"
         document.getElementById('example').textContent = "例題 ⭕️";
     }
     else{
-        window.alert("残念！\n和が"+parseInt(b)+"、積が"+parseInt(c)+"となる二つの数字を考えてみましょう！");
+        document.getElementById('judge').textContent = "残念！";
+        document.getElementById('advice').textContent = "和が"+parseInt(b)+"、積が"+parseInt(c)+"となる2つの数字を考えてみよう！";
         document.getElementById('example').textContent = "例題 ❌";
     }
 }
+
+//モーダルの設定
+$(function () {
+    $('#answer').click(function(){
+        answer();
+        $('#modalArea').fadeIn(0);
+    });
+    $('#closeModal , #modalBg').click(function(){
+      $('#modalArea').fadeOut(500);
+    });
+  });

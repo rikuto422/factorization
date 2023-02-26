@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>因数分解</title>
-    <meta name="description" content="因数分解練習サイトです">
+    <meta name="description" content="因数分解練習サイトです。">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta property="og:title" content="">
@@ -34,18 +34,36 @@
                     与えられた数式を積の形に変形することを因数分解と言います。一般に、因数分解には次の公式がよく用いられます。
                 </p>
                 <p class="formula">
-                    \begin{align}
-                    \\&1. \quad a^2 + 2ab + b^2 = (a + b)^2 \\
-                    \\
-                    &2. \quad a^2 - 2ab + b^2 = (a - b)^2 \\
-                    \\
-                    &3. \quad a^2 - b^2 = (a + b)(a - b) \\
-                    \\
-                    &4. \quad x^2 + (a + b)x + ab = (x + a)(x + b) \\
-                    \\
-                    &5. \quad acx^2 + (ad + bc)x + bd = (ax + b)(cx + d) \\
-                    \\
-                    \end{align}
+                    <div class="pc_view">
+                        \begin{align}
+                        \\&1. \quad a^2 + 2ab + b^2 = (a + b)^2 \\
+                        \\
+                        &2. \quad a^2 - 2ab + b^2 = (a - b)^2 \\
+                        \\
+                        &3. \quad a^2 - b^2 = (a + b)(a - b) \\
+                        \\
+                        &4. \quad x^2 + (a + b)x + ab = (x + a)(x + b) \\
+                        \\
+                        &5. \quad acx^2 + (ad + bc)x + bd = (ax + b)(cx + d) \\
+                        \\
+                        \end{align}
+                    </div>
+                    <div class="sp_view">
+                        \begin{align}
+                        \\1. \quad &a^2 + 2ab + b^2 = (a + b)^2 \\
+                        \\
+                        2. \quad &a^2 - 2ab + b^2 = (a - b)^2 \\
+                        \\
+                        3. \quad &a^2 - b^2 = (a + b)(a - b) \\
+                        \\
+                        4. \quad &x^2 + (a + b)x + ab \\
+                        &= (x + a)(x + b) \\
+                        \\
+                        5. \quad &acx^2 + (ad + bc)x + bd \\
+                        &= (ax + b)(cx + d) \\
+                        \\
+                        \end{align}
+                        </div>
                 </p>
                 <p>
                     本サイトの練習問題は上記の公式4を練習するものとなっています。
@@ -74,9 +92,15 @@
                 </h5>
                 <p>
                     すべての項に共通因数がある場合は、始めにその因数をくくり出します。
-                    <div class="ex">
+                    <div class="ex" id="ex1_pc">
                         \begin{align}
                         12x^3 y^2 z + 16x y^2 z^3 - 20x^2 y z^3 = 4xyz \, (3x^2 y + 4y z^2 - 5z^2 x)
+                        \end{align}
+                    </div>
+                    <div class="ex" id="ex1_sp">
+                        \begin{align}
+                        & 12x^3 y^2 z + 16x y^2 z^3 - 20x^2 y z^3 \\
+                        &= 4xyz \, (3x^2 y + 4y z^2 - 5z^2 x)
                         \end{align}
                     </div>
                 </p>
@@ -85,33 +109,29 @@
                 </h5>
                 <p>
                     同じ形が出てきたら、別の文字で置き換えて考えると方針が立てやすくなります。また、同じ形を作り出すように工夫して計算する場合もあります。
-                    <table class="ex_table">
-                        <tr>
-                            <th>
-                                <div class="ex">
-                                    \begin{align}
-                                    & 2 (x - 1)^2 - (x - 1) - 6 \quad \\
-                                    &= 2X^2 -X - 6 \\
-                                    &= (X - 2)(2X + 3) \\
-                                    &= (x - 3)(2x + 1)
-                                    \end{align}
-                                </div>
-                            </th>
-                            <th>
-                                <div class="ex">
-                                    \begin{align}
-                                    & (x + 1)(x + 2)(x + 3)(x + 4) - 24 \\
-                                    &= (x + 1)(x + 4)(x + 2)(x + 3) - 24 \\
-                                    &= (x^2 + 5x + 4)(x^2 + 5x + 6) - 24 \\
-                                    &= (X + 4)(X + 6) - 24 \\
-                                    &= x^2 + 10X \\
-                                    &= X (X + 10) \\
-                                    &= x (x + 5)(x^2 + 5x + 10)
-                                    \end{align}
-                                </div> 
-                            </th>
-                        </tr>
-                    </table>
+                    <div class="ex_2">
+                        <ul>
+                            <li>
+                                \begin{align}
+                                & 2 (x - 1)^2 - (x - 1) - 6 \quad \\
+                                &= 2X^2 -X - 6 \\
+                                &= (X - 2)(2X + 3) \\
+                                &= (x - 3)(2x + 1)
+                                \end{align}
+                            </li>
+                            <li>
+                                \begin{align}
+                                & (x + 1)(x + 2)(x + 3)(x + 4) - 24 \\
+                                &= (x + 1)(x + 4)(x + 2)(x + 3) - 24 \\
+                                &= (x^2 + 5x + 4)(x^2 + 5x + 6) - 24 \\
+                                &= (X + 4)(X + 6) - 24 \\
+                                &= x^2 + 10X \\
+                                &= X (X + 10) \\
+                                &= x (x + 5)(x^2 + 5x + 10)
+                                \end{align}
+                            </li>
+                        </ul>
+                    </div>
                 </p>
                 <h5>
                     3.&nbsp;最低次数の文字について整理する
@@ -152,8 +172,6 @@
             <p class="copyright">© 2023 Rikuto Kikuchi All Rights Reserved.</p>
         </footer>
     </div>
-
-    <script src="explain.js"></script>
     <script src=' https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default' async></script>
 </body>
 
