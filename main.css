@@ -66,6 +66,7 @@ h3,h4 {
 .ploblem_area{
     font-size: 20px;
     background-color: aliceblue;
+    padding-bottom: 20px;
 }
 
 /*table_因数分解の中身の調整*/
