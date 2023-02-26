@@ -1,0 +1,160 @@
+<!doctype html>
+<html class="no-js" lang="jp">
+
+<head>
+    <meta charset="utf-8">
+    <title>因数分解</title>
+    <meta name="description" content="因数分解練習サイトです">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <header>
+            <div id="logo">
+            <h1><a href="index.html"><img src="logo.png" alt="因数分解練習サイト"></a></h1>
+            <br>
+            </div>
+        </header>
+
+        <div class="explain">
+            <h3>因数分解の手順</h3>
+                <p>
+                    与えられた数式を積の形に変形することを因数分解と言います。一般に、因数分解には次の公式がよく用いられます。
+                </p>
+                <p class="formula">
+                    \begin{align}
+                    \\&1. \quad a^2 + 2ab + b^2 = (a + b)^2 \\
+                    \\
+                    &2. \quad a^2 - 2ab + b^2 = (a - b)^2 \\
+                    \\
+                    &3. \quad a^2 - b^2 = (a + b)(a - b) \\
+                    \\
+                    &4. \quad x^2 + (a + b)x + ab = (x + a)(x + b) \\
+                    \\
+                    &5. \quad acx^2 + (ad + bc)x + bd = (ax + b)(cx + d) \\
+                    \\
+                    \end{align}
+                </p>
+                <p>
+                    本サイトの練習問題は上記の公式4を練習するものとなっています。
+                    始めに公式4がどのようなものなのかを具体的な数値を例に挙げながら解説し、
+                    次に高等学校で扱われる一般的な因数分解の問題を解くための手順について紹介していきます。<br>
+                </p>
+                <h4>
+                    公式４の具体例
+                </h4>
+                <p>
+                    例えば \(x^2 -4x -5\) という数式を因数分解する場合を考えます。
+                    公式4の左辺を見てみると、\(x\)の一次の係数は \((a + b)\)、定数項は \(ab\) と表されています。
+                    すなわち \(a + b = -4 \) , \(ab = -5\) であることがわかります。
+                    ここで和が \(-4\) で積が \(-5\) となる二つの数 \(( a , b )\) の組み合わせを考えると、それは \(1\) と \(-5\) になります。
+                    したがって、\(x^2 -4x -5\) は \((x + 1)(x -5)\) または \((x -5)(x + 1)\) と因数分解できることがわかります。<br>
+                </p>
+                <h4>
+                    因数分解の手順
+                </h4>
+                <p>
+                    一般的な因数分解の問題を解くための手順について紹介します。
+                    次の4つの手順を踏まえ、適宜上記の公式を用いることで因数分解を行うことができます。<br>
+                </p>
+                <h5>
+                    1.&nbsp;共通因数でくくる
+                </h5>
+                <p>
+                    すべての項に共通因数がある場合は、始めにその因数をくくり出します。
+                    <div class="ex">
+                        \begin{align}
+                        12x^3 y^2 z + 16x y^2 z^3 - 20x^2 y z^3 = 4xyz \, (3x^2 y + 4y z^2 - 5z^2 x)
+                        \end{align}
+                    </div>
+                </p>
+                <h5>
+                    2.&nbsp;同じ形のものは別の文字で置き換える
+                </h5>
+                <p>
+                    同じ形が出てきたら、別の文字で置き換えて考えると方針が立てやすくなります。また、同じ形を作り出すように工夫して計算する場合もあります。
+                    <table class="ex_table">
+                        <tr>
+                            <th>
+                                <div class="ex">
+                                    \begin{align}
+                                    & 2 (x - 1)^2 - (x - 1) - 6 \quad \\
+                                    &= 2X^2 -X - 6 \\
+                                    &= (X - 2)(2X + 3) \\
+                                    &= (x - 3)(2x + 1)
+                                    \end{align}
+                                </div>
+                            </th>
+                            <th>
+                                <div class="ex">
+                                    \begin{align}
+                                    & (x + 1)(x + 2)(x + 3)(x + 4) - 24 \\
+                                    &= (x + 1)(x + 4)(x + 2)(x + 3) - 24 \\
+                                    &= (x^2 + 5x + 4)(x^2 + 5x + 6) - 24 \\
+                                    &= (X + 4)(X + 6) - 24 \\
+                                    &= x^2 + 10X \\
+                                    &= X (X + 10) \\
+                                    &= x (x + 5)(x^2 + 5x + 10)
+                                    \end{align}
+                                </div> 
+                            </th>
+                        </tr>
+                    </table>
+                </p>
+                <h5>
+                    3.&nbsp;最低次数の文字について整理する
+                </h5>
+                <p>
+                    複数の文字を含む式では、最低次数の文字について整理します。最低次数が同じ場合はどれか一つの文字について整理します。
+                    <div class="ex">
+                        \begin{align}
+                        & x^2 - xy - 2y^2 - x - 7y - 6 \\
+                        &= x^2 - (y + 1) x - 2y^2 - 7y -6 \\
+                        &= x^2 - (y + 1) x - (2y + 3)(y + 2) \\
+                        &= (x - 2y - 3)(x + y + 2)
+                        \end{align}
+                    </div>
+                </p>
+                <h5>
+                    4.&nbsp;その他（複2次式の因数分解）
+                </h5>
+                <p>
+                    複2次式（次数がすべて偶数の項のみからなる多項式）の因数分解では、工夫して平方の差を作りだすことが必要となる場合があります。
+                    <div class="ex">
+                        \begin{align}
+                        & x^4 - x^2 + 16 \\
+                        &= (x^4 + 8x^2 + 16) - 9x^2 \\
+                        &= (x^2 + 4)^2 - (3x)^2 \\
+                        &= (x^2 + 3x + 4)(x^2 - 3x + 4)
+                        \end{align}
+                    </div>
+                </p>    
+        </div>
+        <br><br>
+
+        <footer class="footer">
+            <ul class="md-flex">
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="ploblem.html">練習問題</a></li>
+            </ul>
+            <p class="copyright">© 2023 Rikuto Kikuchi All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script src="explain.js"></script>
+    <script src=' https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default' async></script>
+</body>
+
+</html>

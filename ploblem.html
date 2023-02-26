@@ -1,0 +1,577 @@
+<!doctype html>
+<html class="no-js" lang="jp">
+
+<head>
+  <meta charset="utf-8">
+  <title>因数分解</title>
+  <meta name="description" content="練習問題">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+    <header>
+        <div id="logo">
+        <h1><a href="index.html"><img src="logo.png" alt="因数分解練習サイト"></a></h1>
+        <br>
+        </div>
+    </header>
+
+    <div>
+        <h3>練習問題</h3>
+        <p class="explain">解答が終わったら「正誤判定」のボタンを押してください。<br>10問中何問正解したかが表示されます。</p>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題１</p>
+        <p class="js-ploblem"></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題２</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題３</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題４</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題５</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題６</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題７</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題８</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題９</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="ploblem_area">
+        <p class="ploblem_number">問題１０</p>
+        <p class="js-ploblem"><!--（jsで生成）--></p>
+        <table>
+            <tr>
+                <th><label>$$ =(x $$</label></th>
+                <th>
+                <select name="pm" class="left-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="left-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ )(x $$</label></th>
+                <th>
+                <select name="pm" class="right-pm">
+                    <option value="-">$$-$$</option>
+                    <option value="+">$$+$$</option>
+                </select>
+                </th>
+                <th>
+                <select name="num" class="right-num" class="num" >
+                    <option value="0">□</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                </th>
+                <th><label>$$ ) $$</label></th>
+            </tr>
+        </table>
+    </div>
+
+    <div class="button">
+        <div class="item"><a href="explain.html" class="btn btn--blue">因数分解の手順</a></div>
+        <div class="item"><a href="" class="btn btn--blue">問題リセット</a></div>
+        <div class="item"><input type="button" class="btn btn--blue" value="正誤判定" onclick="answer()"></div>
+    </div>
+
+    <br><br>
+
+    <footer class="footer">
+        <ul class="md-flex">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="explain.html">因数分解の手順</a></li>
+        </ul>
+        <p class="copyright">© 2023 Rikuto Kikuchi All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="ploblem.js"></script>
+  <script src=' https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default' async></script>
+</body>
+
+</html>

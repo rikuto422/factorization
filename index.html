@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="jp">
+
+<head>
+  <meta charset="utf-8">
+  <title>因数分解</title>
+  <meta name="description" content="因数分解練習サイトです">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="stylesheet" href="main.css" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="container-fluid">
+
+    <header>
+
+      <div id="logo">
+      <h1><a href="index.html"><img src="logo.png" alt="因数分解練習サイト"></a></h1>
+      <br>
+      </div>
+
+    </header>
+
+    <div>
+      <h3>本サイトの概要</h3>
+      <p class="explain">因数分解の計算が苦手で<span class="blue">たくさん練習したい</span>、もっと<span class="blue">早く正確に</span>因数分解ができるようになりたい、<span class="blue">とにかく因数分解がしたい</span>、そんな方達に向けてこのサイトを作りました。<br><br>
+        本サイトでは基本的な因数分解の問題を好きなだけ解くことができます。1セット10問となっており、問題は自動で生成されます。<br><br>
+        解答の際はかっこの中にカーソルを合わせて、符号と数字を選択してください。「正誤判定」のボタンを押すと正誤判定されます。<span class="red">満点を目指して頑張りましょう！</span><br><br>
+        「因数分解の手順」を押すと因数分解の簡単な説明ページに移動します。因数分解のやり方を忘れてしまった方は、こちらのページをご活用ください。準備ができた方は「練習問題」を押して早速因数分解をしていきましょう！</p>
+    </div>
+
+    <div class="ploblem_area_ex">
+      <p id="example">例題</p>
+      <p id="js-ploblem"></p>
+      <table>
+        <tr>
+            <th><label>$$ =(x $$</label></th>
+            <th>
+              <select name="pm" id="left-pm">
+                <option value="-">$$-$$</option>
+                <option value="+">$$+$$</option>
+              </select>
+            </th>
+            <th>
+              <select name="num" class="num" id="left-num">
+                <option value="0">□</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </th>
+            <th><label>$$ )(x $$</label></th>
+            <th>
+              <select name="pm" id="right-pm">
+                <option value="-">$$-$$</option>
+                <option value="+">$$+$$</option>
+              </select>
+            </th>
+            <th>
+              <select name="num" class="num" id="right-num">
+                <option value="0">□</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select>
+            </th>
+            <th><label>$$ ) $$</label></th>
+        </tr>
+      </table>
+    </div>
+    <div class="button">
+      <div class="item"><a href="explain.html" class="btn btn--blue">因数分解の手順</a></div>
+      <div class="item"><a href="ploblem.html" class="btn btn--blue">練習問題</a></div>
+      <div class="item"><input type="button" class="btn btn--blue" value="例題の正誤判定" onclick="answer()"></div>
+    </div>
+
+    <br><br>
+
+    <footer class="footer">
+      <ul class="md-flex">
+          <li><a href="explain.html">因数分解の手順</a></li>
+          <li><a href="ploblem.html">練習問題</a></li>
+      </ul>
+      <p class="copyright">© 2023 Rikuto Kikuchi All Rights Reserved.</p>
+  </footer>
+  </div>
+
+  <script src="index.js"></script>
+  <script src=' https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=default' async></script>
+</body>
+
+</html>
