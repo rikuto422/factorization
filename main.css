@@ -83,7 +83,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    width: 30px;
+    width: 38px;
     text-align: center;
     color: black;
     background-color: aliceblue;
@@ -91,7 +91,7 @@ select {
 
 /*プルダウンの位置の微調整*/
 .num,.left-num,.right-num{
-    width: 30px;
+    width: 38px;
     margin-top: 2px;
     color: #000;
 }
